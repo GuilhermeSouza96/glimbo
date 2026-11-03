@@ -31,3 +31,9 @@ a { color: var(--link); }
 .date { color: var(--muted); margin-top: 0; }
 .langs { font-size: 0.95rem; color: var(--muted); }
 ul { padding-left: 1.3em; }
+h3 { font-size: 1rem; margin: 20px 0 6px; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+th { color: var(--muted); font-weight: 600; }
+.summary { border: 1px solid var(--rule); border-radius: 8px; padding: 4px 16px; }
