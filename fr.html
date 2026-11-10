@@ -11,7 +11,7 @@
 <nav class="langs"><a href="index.html">Português</a> · <a href="en.html">English</a> · <a href="es.html">Español</a> · <b>Français</b></nav>
 
 <h1>Politique de confidentialité de Glimbo</h1>
-<p class="date">Dernière mise à jour : 3 novembre 2026</p>
+<p class="date">Dernière mise à jour : 10 novembre 2026</p>
 
 <p>Glimbo est un jeu de blocs à placer pour Android. Cette politique explique, de la façon la plus complète possible,
 quelles données sont utilisées quand vous jouez, par qui, pourquoi, pendant combien de temps et comment vous pouvez
@@ -25,7 +25,7 @@ refuser ou demander leur suppression.</p>
   <li>Votre progression reste sur votre appareil et, seulement si vous vous connectez à Play Jeux, aussi dans votre
   compte Google.</li>
   <li>Le jeu utilise des services de Google pour afficher des publicités (AdMob), sauvegarder la progression dans le
-  cloud (Play Jeux), comprendre comment le jeu est utilisé et corriger les plantages (Firebase) et traiter les achats
+  cloud (Play Jeux), comprendre comment le jeu est utilisé, corriger les plantages et ouvrir les événements saisonniers (Firebase) et traiter les achats
   (Google Play).</li>
   <li><strong>Nous ne vendons pas vos données.</strong> Le seul usage publicitaire est celui des publicités d'AdMob,
   expliqué à la section 3.1.</li>
@@ -53,7 +53,7 @@ Firebase</a>.</p>
 
 <h3>3.1 Publicités (Google AdMob)</h3>
 <p>Le jeu affiche des publicités de Google AdMob : des vidéos que vous choisissez de regarder en échange d'une
-récompense et des publicités entre les parties (qui n'apparaissent pas pour ceux qui ont acheté « supprimer les
+récompense et des publicités entre les parties et en quittant le mode ZEN (qui n'apparaissent pas pour ceux qui ont acheté « supprimer les
 pubs »). Pour afficher et mesurer les publicités et éviter la fraude, AdMob peut collecter :</p>
 <ul>
   <li>l'identifiant publicitaire de l'appareil ;</li>
@@ -111,6 +111,16 @@ pas vos données de paiement ; le jeu reçoit seulement de Google Play la confir
 vous livrer ce que vous avez acheté. Voir les <a href="https://policies.google.com/privacy">Règles de confidentialité de
 Google</a>.</p>
 
+<h3>3.5 Événements saisonniers (Firebase Remote Config)</h3>
+<p>Les événements saisonniers du jeu (comme Noël et le Nouvel An) s'ouvrent et se ferment aux bonnes dates grâce à
+Firebase Remote Config. Pour cela, le jeu consulte Firebase à son ouverture, au maximum une fois par heure. La
+consultation envoie l'identifiant aléatoire de l'installation (le même qu'à la section 3.3), le nom et la version du
+jeu, la version d'Android, la langue, le pays et le fuseau horaire configurés sur l'appareil et, si les statistiques
+sont activées, les caractéristiques du joueur dans le jeu de la section 3.3 ; Google reçoit aussi l'adresse IP, comme
+pour toute connexion. La réponse indique seulement quels événements sont ouverts et jusqu'à quand. Cette consultation
+fait partie du fonctionnement du jeu et a lieu même sans consentement aux statistiques, mais elle n'est utilisée ni
+pour les statistiques ni pour les publicités. Voir <a href="https://firebase.google.com/support/privacy">Confidentialité et sécurité dans Firebase</a>.</p>
+
 <h2>4. Ce que le jeu ne collecte pas</h2>
 <p>Le jeu ne demande ni ne collecte : nom, e-mail, numéro de téléphone, adresse, date de naissance, contacts, photos,
 vidéos, fichiers, messages, appareil photo, micro, position précise (GPS), liste des autres applications installées ni
@@ -119,7 +129,7 @@ historique de navigation. Il n'a pas non plus de chat ni de contenu créé par d
 <h2>5. Autorisations Android</h2>
 <div class="table"><table>
 <tr><th>Autorisation</th><th>Pourquoi</th></tr>
-<tr><td>Internet et état du réseau</td><td>publicités, sauvegarde dans le cloud, statistiques, rapports de plantage et achats</td></tr>
+<tr><td>Internet et état du réseau</td><td>publicités, sauvegarde dans le cloud, statistiques, rapports de plantage, achats et événements saisonniers</td></tr>
 <tr><td>Identifiant publicitaire (AD_ID et ceux d'Android Privacy Sandbox)</td><td>publicités d'AdMob (section 3.1)</td></tr>
 <tr><td>Achats (Google Play Billing)</td><td>achats dans le jeu</td></tr>
 <tr><td>Source de l'installation (Install Referrer)</td><td>permettre à Firebase de savoir d'où le jeu a été installé (par exemple, le Play Store)</td></tr>
@@ -135,6 +145,7 @@ historique de navigation. Il n'a pas non plus de chat ni de contenu créé par d
 <tr><td>Publicités personnalisées</td><td>votre consentement, là où la loi l'exige</td></tr>
 <tr><td>Publicités non personnalisées et prévention de la fraude</td><td>intérêt légitime (le jeu est gratuit et financé par la publicité)</td></tr>
 <tr><td>Statistiques d'utilisation et rapports de plantage</td><td>votre consentement, là où la loi l'exige ; ailleurs, intérêt légitime (améliorer le jeu et corriger les erreurs)</td></tr>
+<tr><td>Ouvrir et fermer les événements saisonniers (Remote Config)</td><td>exécution du service que vous avez demandé (le jeu) et intérêt légitime (que le contenu du jeu fonctionne aux bonnes dates)</td></tr>
 </table></div>
 
 <h2>7. Partage et vente</h2>
@@ -154,6 +165,7 @@ les clauses contractuelles types).</p>
 <tr><td>Sauvegarde dans le cloud (Play Jeux)</td><td>jusqu'à ce que vous supprimiez les données de Glimbo dans Play Jeux</td></tr>
 <tr><td>Statistiques liées à l'identifiant de l'installation</td><td>14 mois ; ensuite, seulement des chiffres agrégés, sans identifiant</td></tr>
 <tr><td>Rapports de plantage</td><td>90 jours</td></tr>
+<tr><td>Consultation des événements saisonniers (Remote Config)</td><td>nous ne la conservons pas ; Google la traite selon les conditions de Firebase</td></tr>
 <tr><td>Données des publicités</td><td>selon les <a href="https://policies.google.com/technologies/retention">règles de conservation de Google</a></td></tr>
 </table></div>
 
